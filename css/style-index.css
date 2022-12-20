@@ -62,8 +62,9 @@ object-fit: contain;
     height: 100%;
     object-fit: contain;
 }
-.video-completo a{
+.video-completo a:hover{
     animation: parpadeoSuave 3s infinite;
+    cursor: pointer;
 }
 @keyframes parpadeoSuave{
     0% {
@@ -71,6 +72,9 @@ object-fit: contain;
     }
     50%{
         opacity:1;
+    }
+    100%{
+        opacity: 0.5;
     }
 }
 @media  screen and (max-width:400px) {

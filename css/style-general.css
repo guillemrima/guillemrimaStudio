@@ -43,7 +43,7 @@ header{
 .encabezado-logo span{
     font-weight: 800;
 }
-.navegador ul{
+.navegador-principal{
     display: flex;
     list-style: none;
 }
@@ -65,7 +65,6 @@ header{
     position: relative;
 }
 .subnavegador-gallery{
-    flex-direction: column;
     position: absolute;
     z-index: 1;
     left: -40%;
@@ -73,18 +72,19 @@ header{
     border-radius: 5px;
     width: 120px;
     padding-bottom: 10px;
-    height: auto;
+    list-style: none;
+    display: none;
 }
-.subnavegador-gallery li a{
-   color: black;
-   text-decoration: none;
-   display: none;
+.subnavegador-gallery li{
+    display: block;
+   padding-top: 20px;
 }
 .navegador ul li:hover {
     font-weight: 800;
 }
-.navegador-gallery:hover .subnavegador-gallery li a{
-    display: contents;
+.navegador-gallery:hover .subnavegador-gallery{
+    display: block;
+
 }
 @media  screen and (max-width:400px){
     .encabezado{
