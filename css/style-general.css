@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+    cursor: default;
+    user-select: none;
+}
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(./../img/gifs/loading-icon.webp) 50% 50% no-repeat rgb(249,249,249);
+    opacity: .8;
+}
+::-webkit-scrollbar{
+   display:  none;
+}
+:root{
+    --main-font:'Dosis', sans-serif;
+}
+header{
+    background-color: rgb(255, 255, 255);
+}
+
+.encabezado{
+
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20%;
+}
+.encabezado-logo h1{
+    font-family: var(--main-font);
+    text-align: center;
+    font-weight: 100;
+}
+.encabezado-logo span{
+    font-weight: 800;
+}
+.navegador ul{
+    display: flex;
+    list-style: none;
+}
+.navegador ul li{
+    margin:0px 10px;
+    font-weight: 300;
+    font-size: 1.2em;
+    color: black;
+    cursor: pointer;
+}
+.navegador ul li a{
+    text-decoration: none;
+    font-family: var(--main-font);
+    color: black;
+    cursor: pointer;
+}
+.navegador-gallery{
+    text-align: center;
+    position: relative;
+}
+.subnavegador-gallery{
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    left: -40%;
+    background-color: white;
+    border-radius: 5px;
+    width: 120px;
+    padding-bottom: 10px;
+    height: auto;
+}
+.subnavegador-gallery li a{
+   color: black;
+   text-decoration: none;
+   display: none;
+}
+.navegador ul li:hover {
+    font-weight: 800;
+}
+.navegador-gallery:hover .subnavegador-gallery li a{
+    display: contents;
+}
+@media  screen and (max-width:400px){
+    .encabezado{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .navegador ul li a{
+        font-size: 1em;
+
+    }
+
+    .encabezado-logo{
+        margin: 40px 0px;
+        font-size: 1.2em;
+
+    }
+    ::-webkit-scrollbar{
+        display: none;
+        }
+        ::-webkit-scrollbar-thumb{
+        display: none;
+        
+        }
+}

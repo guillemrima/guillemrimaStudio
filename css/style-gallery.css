@@ -1,0 +1,158 @@
+
+.collage{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 60%;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-gap: 2px;
+
+}
+.collage .imagen{
+    position: relative;
+    opacity: 0;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.collage div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+.imagen-1{
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0;
+}
+.imagen-2{
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay:0.2s;
+}
+.imagen-3{
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay:0.4s;
+}
+.imagen-4{
+    grid-column-start: span 2;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay:0.6s;
+}
+.imagen-5{
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay:0.8s;
+}
+.imagen-6{
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay:1s;
+}
+.imagen-7{
+    grid-column-start: span 2;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay:1.2s;
+}
+.imagen-8{
+    grid-column-start: span 3;
+    grid-row-start: 4;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay:1.4s;
+}
+.descripcion{
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-style: italic;
+    position: absolute;
+    z-index: 1;
+    font-weight: 500;
+    color:rgb(255, 255, 255);
+    background-color: rgba(97, 200, 216, 0.715);
+    font-size: 2.5em;
+    opacity: 0;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.contenedor-imagen-completa{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.imagen-completa{
+    width: 900px; 
+    height: 850px;
+    display: block;
+    box-shadow: 0px 0px 47px 1px rgba(0, 0, 0, 0.3);
+}
+.imagen-completa img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@media  screen and (min-width:800px){
+.imagen:hover .descripcion{
+    opacity: 1;
+}
+.imagen:hover img{
+    transform:  scale(1.2);
+}
+}
+@media  screen and (max-width:400px){
+    .collage{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 95%;
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 150px 100px 150px;
+        grid-gap: 1px;
+    
+    } 
+    .imagen-4{
+        grid-column-start: span 1;
+    }
+    .descripcion{
+        font-size: 1em;
+    }
+    .imagen-completa{
+        width: 350px; 
+        height: 300px;
+    }
+}

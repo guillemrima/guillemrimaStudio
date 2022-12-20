@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/style-aboutme.css">
+    <link rel="stylesheet" href="./../css/style-general.css">
+    <script src="./../js/script.aboutme.js" async defer></script>
+    <title>About me | guillemrima</title>
+</head>
+<header>
+    <div class="encabezado">
+        <div class="encabezado-logo"><h1>GUILLEMRIMA <span>STUDIOS</span></h1></div>
+        <div class="navegador">
+            <ul>
+                <li><a href="./../index.html">HOME</a></li>
+                <li class="navegador-gallery">GALLERY
+                    <ul class="subnavegador-gallery">
+                        <li><a href="./gallery.html">Fotografía</a></li>
+                        <li><a href="./gallery-fpv.html">Videos FPV</a></li>
+                    </ul>
+                <li><a href="./mywork.html">MY WORK</a></li>
+                <li><a href="./aboutme.html">ABOUT ME</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<body>
+    <div class="loader"></div>
+    <div class="contenedor-sobremi">
+        <div class="descripcion-sobremi">
+            <h1>Guillem Rivas Martorell</h1>
+            <br>
+            <p>Nacido en <span>Mallorca</span>, entusiasta de los <span>drones</span> y la fotografía aérea desde pequeño.
+                Mi primer contacto con los drones empezó una mañana de reyes al recibir un juego de 
+                <span>helicopteros de juguete</span>. Recuerdo pasarme horas volando los helicopteros en mi habitación
+                hasta fundir las baterias. A partir de allí cada año en recibía regalos de jugetes radio-control.
+                <br><br>
+                A los 19 me saqué el <span>certificado</span> de piloto de drones y descubrí los <span>drones de carreras/freestyle</span>
+                y la modalidad <span>FPV</span>; mediante gafas y un sistema de transmisión, puedo pilotar mis drones en <span>primera persona</span>.
+                A día de hoy disfruto grabando <span>escenas aéreas</span> alrededor de Mallorca y mostrando a la red el apasionante 
+                mundo de los drones.
+            </p>
+        </div>
+        <div class="galeria-sobremi" id="galeria-sobremi">
+            <img id="galeria" src="./../img/aboutme/foto-1.jpg">
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(window).load(function() {
+    $(".loader").fadeOut("slow");
+});
+</script>
+</body>
+
+</html>

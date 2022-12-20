@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style-gallery.css">
+    <link rel="stylesheet" href="../css/style-general.css">
+    <script src="./../js/script-gallery.js" async defer=""></script>
+    <title>Gallery | guillemrima</title>
+</head>
+<header>
+    <div class="encabezado">
+        <div class="encabezado-logo"><h1>GUILLEMRIMA <span>STUDIOS</span></h1></div>
+        <div class="navegador">
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li class="navegador-gallery">GALLERY
+                    <ul class="subnavegador-gallery">
+                        <li><a href="gallery.html">Fotografía</a></li>
+                        <li><a href="./gallery-fpv.html">Videos FPV</a></li>
+                    </ul>
+                <li><a href="mywork.html">MY WORK</a></li>
+                <li><a href="aboutme.html">ABOUT ME</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<body>
+    <div class="loader"></div>
+    <div class="collage" id="collage">
+        <div id="portfolio_1" class="imagen imagen-1">
+            <div class="descripcion">Casa de campo<br>-Santanyí-</div>
+            <img src="../img/portfolio_1.jpg">
+        </div>
+        <div id="portfolio_2" class="imagen imagen-2">
+            <div class="descripcion">Torre del Cap Andritxol<br>-Camp de Mar-</div>
+            <img src="../img/portfolio_2.jpg">
+        </div>
+        <div id="portfolio_7" class="imagen imagen-3">
+            <div class="descripcion">Caló d'en Perdiu <br>-Santanyí-</div>
+            <img src="../img/portfolio_7.jpg">
+        </div>
+        <div id="portfolio_4" class="imagen imagen-4">
+            <div class="descripcion">Es Pontàs<br>-Santanyí-</div>
+            <img src="../img/portfolio_4.jpg">
+        </div>
+        <div id="portfolio_3" class="imagen imagen-5">
+            <div class="descripcion">Cala Mondragó<br>-Santanyí-</div>
+            <img src="../img/portfolio_3.jpg">
+        </div>
+        <div id="portfolio_6" class="imagen imagen-6">
+            <div class="descripcion">Lagos de Covadonga<br>-Asturies-</div>
+            <img src="../img/portfolio_6.jpg">
+        </div>
+        <div id="portfolio_5" class="imagen imagen-7">
+            <div class="descripcion">Torre de Cala en Basset<br>-La Trapa-</div>
+            <img src="../img/portfolio_5.jpg">
+        </div>
+    </div>
+    <div id="marco-imagen-completa" class="contenedor-imagen-completa">
+        <div class="imagen-completa"><img id="imagen-completa" src=""></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(window).load(function() {
+    $(".loader").fadeOut("slow");
+});
+</script>
+</body>
+
+</html>

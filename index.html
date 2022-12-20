@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-index.css">
+    <link rel="stylesheet" href="css/style-general.css">
+    <title>Home | guillemrima</title>
+</head>
+<header>
+    <div class="encabezado">
+        <div class="encabezado-logo"><h1>GUILLEMRIMA <span>STUDIOS</span></h1></div>
+        <div class="navegador">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li class="navegador-gallery">GALLERY
+                    <ul class="subnavegador-gallery">
+                        <li><a href="./html/gallery.html">Fotografía</a></li>
+                        <li><a href="./html/gallery-fpv.html">Videos FPV</a></li>
+                    </ul>
+                </li>
+                <li><a href="html/mywork.html">MY WORK</a></li>
+                <li><a href="html/aboutme.html">ABOUT ME</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+</body>
+
+<div class="loader"></div>
+    <div class="video-presentacion">
+        <video width="320" height="240" autoplay muted loop>
+            <source src="./mp4/galleryFPV/S'hort-de-sa-Cova.mp4" type="video/mp4">
+        </video>
+        <div class="video-completo"><a href="https://www.youtube.com/watch?v=K-LBlyIWVIY&t=1s" target="blank">Ver video completo</a></div>
+    </div>
+
+    <div class="jumbotron">
+        <div class="estrellasJumbotron"><img src="img/5stars_blue.png"></div>
+        <div class="textoJumbotron">
+        <p>"Desde el cielo hasta tus ojos"<br>Las imagenes aéreas nunca dejan de sorprendernos. Admirar un paisaje a 200 metros de altura
+        es una sensación única y digna de ver.<br> Mediante esta página quiero compartir con vosotros todo aquello que captan mis drones
+        allí arriba.<br> Desde el cielo para vuestros ojos. </p>
+        </div>
+        <div class="firma"><img src="img/firma.png"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $(".loader").fadeOut("slow");
+    });
+    </script>
+</body>
+
+</html>
